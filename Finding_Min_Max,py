@@ -1,0 +1,33 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Sep  9 15:44:23 2022
+
+Purpose : To find minima and Maxima of a list of randome list     
+@author: Ashwin
+Roll no : M220590PH
+"""
+
+#Importing the random module
+import random
+print("impo")
+
+#Using the random module to generate a list of random numbers.
+print("Ashwin")
+list=random.sample(range(10,99),20)
+print("The randomly genrated list of random number is \n {0}".format(list))
+
+#initalizing the min max variable
+min=list[0]
+max=list[0]
+
+#loop for checking the values
+for i in list:
+    if i<=min:
+        min=i
+    if i>=max:
+        max=i
+
+#printing the result
+print("THe minimum from given list is = {0}".format(min))
+print("THe maximum from given list is = {0}".format(max))
